@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/furniweblab/assets/favicon-fur-dh8xe203.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FurniWebLab</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/furniweblab/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/furniweblab/assets/vendor-DY_idrNt.js">
+    <link rel="stylesheet" crossorigin href="/furniweblab/assets/vendor-D41gWVJh.css">
+    <link rel="stylesheet" crossorigin href="/furniweblab/assets/index-Co1F_Sx7.css">
+  </head>
+  <body>
+    <header class="page-header">
+  <div class="container header-container">
+    <a href="./index.html" class="header-logo">
+      <svg class="icon-head-logo" width="163" height="70">
+        <use href="/furniweblab/assets/sprite-CA5GGzUd.svg#logo"></use>
+      </svg>
+    </a>
+
+    <div class="right-header-box">
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li class="header-item">
+            <a href="#furniture-list-section" class="header-nav-link current">Наші меблі</a>
+          </li>
+          <li class="header-item">
+            <a href="#about-us-section" class="header-nav-link">Про нас</a>
+          </li>
+          <li class="header-item">
+            <a href="#faq-section" class="header-nav-link">Часті питання</a>
+          </li>
+          <li class="header-item">
+            <a href="#feedbacks" class="header-nav-link">Відгуки</a>
+          </li>
+          <li class="header-item">
+            <a href="#furniture-list-section" class="header-nav-link header-nav-btn header-nav-btn-desktop">
+              До покупок
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Оновлена універсальна кнопка (бургер + хрестик) -->
+      <button type="button" class="menu-button" data-mobile-navbar-toggle aria-label="Меню">
+        <svg class="icon-head-button icon-menu" width="32" height="32">
+          <use href="/furniweblab/assets/sprite-CA5GGzUd.svg#menu"></use>
+        </svg>
+        <svg class="icon-head-button icon-close" width="32" height="32">
+          <use href="/furniweblab/assets/sprite-CA5GGzUd.svg#x"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Мобільне меню -->
+  <div class="mobile-navbar is-hidden" data-mobile-navbar>
+    <div class="container mobile-navbar-container">
+      <div class="mobile-navbar-header">
+        <a href="./index.html" class="navbar-header-logo">
+          <svg class="icon-head-logo" width="163" height="70">
+            <use href="/furniweblab/assets/sprite-CA5GGzUd.svg#logo"></use>
+          </svg>
+        </a>
+      </div>
+
+      <nav class="navbar-menu-nav">
+        <ul class="navbar-nav-list">
+          <li class="navbar-nav-item">
+            <a href="#furniture-list-section" class="navbar-nav-link">Наші меблі</a>
+          </li>
+          <li class="navbar-nav-item">
+            <a href="#about-us-section" class="navbar-nav-link">Про нас</a>
+          </li>
+          <li class="navbar-nav-item">
+            <a href="#faq-section" class="navbar-nav-link">Часті питання</a>
+          </li>
+          <li class="navbar-nav-item">
+            <a href="#feedbacks" class="navbar-nav-link">Відгуки</a>
+          </li>
+          <li class="navbar-nav-item navbar-nav-item-mob">
+            <a href="#furniture-list-section" class="navbar-nav-link header-nav-btn">До покупок</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Overlay -->
+  <div class="mobile-navbar-overlay is-hidden" data-mobile-navbar-overlay></div>
+</header>
+
+    <main>
+      <!-- Loads the specified .html file -->
+      <section class="hero-section section-reset">
+  <div class="hero-back">
+    <div class="container">
+      <div class="box-info">
+        <h1 class="hero-title">
+          Створіть свій <br class="desktop-break" />
+          ідеальний дім
+        </h1>
+
+        <h2 class="hero-deck">
+          Відкрийте для себе колекцію стильних та комфортних меблів, які
+          перетворять ваш простір. Наша продукція поєднує в собі елегантність та
+          функціональність.
+        </h2>
+        <a class="btn btn-link js-scroll" href="#feedbacks"
+          >Що про нас думають</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section id="furniture-list-section" class="furniture-list-section">
+  <div class="our-furniture container">
+    <h1 class="section-title">Наші меблі</h1>
+
+    <p class="section-descr">Знайдіть ідеальні рішення для вашого інтер'єру</p>
+
+    <ul class="category-container">
+      <li class="category-item">
+        <a class="category-card all" href="#furniture">
+          <span class="category-title">Всі товари</span>
+        </a>
+      </li>
+      <li class="category-item">
+        <a class="category-card hallway" href="#furniture" data-id="">
+          <span class="category-title"></span
+        ></a>
+      </li>
+      <li class="category-item">
+        <a class="category-card kitchens" href="#furniture" data-id="">
+          <span class="category-title"></span>
+        </a>
+      </li>
+      <li class="category-item">
+        <a class="category-card garden" href="#furniture" data-id="">
+          <span class="category-title">Ліжка та матраци</span>
+        </a>
+      </li>
+      <li class="category-item">
+        <a class="category-card tables" href="#furniture">
+          <span class="category-title"></span>
+        </a>
+      </li>
+      <li class="category-item">
+        <a class="category-card soft" href="#furniture" data-id="">
+          <span class="category-title"></span>
+        </a>
+      </li>
+      <li class="category-item">
+        <a class="category-card children" href="#furniture">
+          <span class="category-title"></span>
+        </a>
+      </li>
+      <li class="category-item">
+        <a class="category-card decor" href="#furniture" data-id="">
+          <span class="category-title"></span>
+        </a>
+      </li>
+      <li class="category-item">
+        <a class="category-card bathroom" href="#furniture" data-id="">
+          <span class="category-title"></span>
+        </a>
+      </li>
+      <li class="category-item">
+        <a class="category-card office" href="#furniture" data-id="">
+          <span class="category-title"></span>
+        </a>
+      </li>
+      <li class="category-item">
+        <a class="category-card wardrobe" href="#furniture" data-id="">
+          <span class="category-title"></span>
+        </a>
+      </li>
+      <li class="category-item">
+        <a class="category-card bads" href="#furniture" data-id="">
+          <span class="category-title"></span>
+        </a>
+      </li>
+      <li class="category-item">
+        <a class="category-card hairs" href="#furniture" data-id="">
+          <span class="category-title"></span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="loading" hidden>
+      <p>Loading, please wait...</p>
+      <button class="loadingBtn" type="button">
+        <span class="loader"></span>
+      </button>
+    </div>
+
+    <div id="furniture" class="furniture-pagination-container">
+      <ul class="furniture-list"></ul>
+
+      <ul class="pagination-container" hidden>
+        <li class="swipe-btn back">
+          <button
+            class="pagination-btn pagination-back pag-buttons"
+            aria-label="Back"
+            data-nav="minus"
+            disabled
+          >
+            <svg class="scroll-svg" width="48" height="48" aria-hidden="true">
+              <use href="/furniweblab/assets/sprite-CA5GGzUd.svg#left-arrow-alt"></use>
+            </svg>
+          </button>
+        </li>
+
+        <li class="swipe-btn next">
+          <button
+            class="pagination-btn pagination-next pag-buttons"
+            aria-label="Next"
+            data-nav="plus"
+          >
+            <svg class="scroll-svg" width="48" height="48" aria-hidden="true">
+              <use href="/furniweblab/assets/sprite-CA5GGzUd.svg#right-arrow-alt"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <button
+      id="load-more-button"
+      class="load-more-button button"
+      type="button"
+      hidden
+    >
+      Показати ще
+    </button>
+  </div>
+</section>
+
+      <section id="about-us-section" class="about-us-section">
+  <div class="container">
+    <div class="about-us-inner">
+      <div class="about-us-text">
+        <h2 class="name-sect">Про Меблерію</h2>
+        <p>
+          У Меблерії ми прагнемо створювати затишок та функціональність у
+          кожному домі. Наша місія - пропонувати високоякісні меблі, що
+          поєднують у собі сучасний дизайн, довговічність та доступність. Ми
+          віримо, що ідеальний інтер'єр починається з правильних меблів.
+        </p>
+      </div>
+      <div class="picture-box">
+        <picture>
+          <source
+            srcset="/furniweblab/assets/ph-0uoP9EeD.jpg 1x, /furniweblab/assets/phnret-D9JAyCIb.jpg 2x"
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="/furniweblab/assets/tab-CM_ib-hF.jpg 1x, /furniweblab/assets/tabret-DCT8Tvbv.jpg 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/furniweblab/assets/des-B-TXv2F9.jpg 1x, /furniweblab/assets/deskret-DRPdYcXU.jpg 2x"
+            media="(min-width: 1158px)"
+          />
+          <img
+            src="/furniweblab/assets/des-B-TXv2F9.jpg"
+            alt="about-furniture"
+            width="644"
+            height="436"
+          />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="popular-products-section">
+  <div class="container"></div>
+</section>
+
+      <section id="faq-section" class="faq-section">
+  <div class="container">
+    <h2 class="faq-title">Часті запитання</h2>
+    <ul class="qa">
+      <li class="faq-item">
+        <button class="faq-quest" aria-expanded="false">
+          Як здійснюється доставка меблів?
+          <img
+            src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='17'%20height='10'%20fill='none'%20viewBox='0%200%2017%2010'%3e%3cpath%20fill='%23080c09'%20stroke='%23080c09'%20d='M15.513.573a.25.25%200%200%201%20.353%200l.354.354a.25.25%200%200%201%200%20.353L8.573%208.927a.25.25%200%200%201-.353%200L.573%201.28a.25.25%200%200%201%200-.353L.927.573a.25.25%200%200%201%20.353%200L8.396%207.69z'/%3e%3c/svg%3e"
+            alt="icon"
+            class="faq-icon"
+            width="32"
+            height="32"
+          />
+        </button>
+        <div class="faq-answ" hidden>
+          <p>
+            Ми доставляємо замовлення по всій Україні через надійні служби.
+            Термін доставки зазвичай складає 3–7 днів залежно від регіону.
+          </p>
+        </div>
+      </li>
+      <li class="faq-item">
+        <button class="faq-quest" aria-expanded="false">
+          Чи є можливість вибрати колір або матеріал?
+          <img
+            src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='17'%20height='10'%20fill='none'%20viewBox='0%200%2017%2010'%3e%3cpath%20fill='%23080c09'%20stroke='%23080c09'%20d='M15.513.573a.25.25%200%200%201%20.353%200l.354.354a.25.25%200%200%201%200%20.353L8.573%208.927a.25.25%200%200%201-.353%200L.573%201.28a.25.25%200%200%201%200-.353L.927.573a.25.25%200%200%201%20.353%200L8.396%207.69z'/%3e%3c/svg%3e"
+            alt="icon"
+            class="faq-icon"
+            width="32"
+            height="32"
+          />
+        </button>
+        <div class="faq-answ" hidden>
+          <p>
+            Так, у багатьох моделях доступні варіанти оббивки та кольорів. Усі
+            доступні опції вказані на сторінці товару.
+          </p>
+        </div>
+      </li>
+      <li class="faq-item">
+        <button class="faq-quest" aria-expanded="false">
+          Чи можна повернути товар, якщо він не підійшов?
+          <img
+            src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='17'%20height='10'%20fill='none'%20viewBox='0%200%2017%2010'%3e%3cpath%20fill='%23080c09'%20stroke='%23080c09'%20d='M15.513.573a.25.25%200%200%201%20.353%200l.354.354a.25.25%200%200%201%200%20.353L8.573%208.927a.25.25%200%200%201-.353%200L.573%201.28a.25.25%200%200%201%200-.353L.927.573a.25.25%200%200%201%20.353%200L8.396%207.69z'/%3e%3c/svg%3e"
+            alt="icon"
+            class="faq-icon"
+            width="32"
+            height="32"
+          />
+        </button>
+        <div class="faq-answ" hidden>
+          <p>
+            Так, ви можете повернути товар протягом 14 днів, якщо він не був у
+            користуванні та збережений у первинному вигляді.
+          </p>
+        </div>
+      </li>
+      <li class="faq-item">
+        <button class="faq-quest" aria-expanded="false">
+          Чи надаєте ви послугу збирання меблів?
+          <img
+            src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='17'%20height='10'%20fill='none'%20viewBox='0%200%2017%2010'%3e%3cpath%20fill='%23080c09'%20stroke='%23080c09'%20d='M15.513.573a.25.25%200%200%201%20.353%200l.354.354a.25.25%200%200%201%200%20.353L8.573%208.927a.25.25%200%200%201-.353%200L.573%201.28a.25.25%200%200%201%200-.353L.927.573a.25.25%200%200%201%20.353%200L8.396%207.69z'/%3e%3c/svg%3e"
+            alt="icon"
+            class="faq-icon"
+            width="32"
+            height="32"
+          />
+        </button>
+        <div class="faq-answ" hidden>
+          <p>
+            Так, під час оформлення замовлення можна обрати послугу збирання.
+            Наші майстри зберуть меблі у зручний для вас час.
+          </p>
+        </div>
+      </li>
+      <li class="faq-item">
+        <button class="faq-quest" aria-expanded="false">
+          Як здійснити оплату?
+          <img
+            src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='17'%20height='10'%20fill='none'%20viewBox='0%200%2017%2010'%3e%3cpath%20fill='%23080c09'%20stroke='%23080c09'%20d='M15.513.573a.25.25%200%200%201%20.353%200l.354.354a.25.25%200%200%201%200%20.353L8.573%208.927a.25.25%200%200%201-.353%200L.573%201.28a.25.25%200%200%201%200-.353L.927.573a.25.25%200%200%201%20.353%200L8.396%207.69z'/%3e%3c/svg%3e"
+            alt="icon"
+            class="faq-icon"
+            width="32"
+            height="32"
+          />
+        </button>
+        <div class="faq-answ" hidden>
+          <p>
+            Ми приймаємо оплату карткою онлайн, банківським переказом або
+            післяплатою при отриманні.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section id="feedbacks" class="feedbacks-section">
+  <div class="container feedbacks-container">
+    <h2 class="feedbacks-title">Відгуки клієнтів</h2>
+    <p class="feedbacks-text">
+      Дізнайтеся, що кажуть наші задоволені клієнти про нашу меблі.
+    </p>
+    <ul class="feedbacks-list"></ul>
+  </div>
+</section>
+
+
+      <section class="furniture-details-modal">
+  <div class="product-modal-backdrop is-hidden">
+        <div class="product-modal">
+            
+            <button class="modal-close-btn" type="button">
+                <svg class="modal-close-icon" width="16" height="16" >
+                    <use href="/furniweblab/assets/sprite-CA5GGzUd.svg#x"></use>
+                </svg>
+            </button>
+            
+            <div class="modal-main-content"></div>
+
+        </div>
+    </div>
+</section>
+
+      <section id="order-modal" class="order-modal">
+  <div class="modal">
+    <button type="button" id="closeModalBtn" class="modal-close">
+      <svg class="modal-icon" width="32" height="32">
+        <use href="/furniweblab/assets/sprite-CA5GGzUd.svg#x"></use>
+      </svg>
+    </button>
+    <h2 class="modal-title">Замовити</h2>
+
+    <form id="callback-form" class="modal-form">
+      <label class="input-wrapper">
+        Ім’я*
+        <input type="text" name="name" id="name" placeholder="Дмитро" />
+      </label>
+
+      <label class="input-wrapper">
+        Телефон*
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          placeholder="38 099 123 22 11"
+        />
+      </label>
+
+      <label class="input-wrapper">
+        Коментар
+        <textarea
+          name="comment"
+          id="comment"
+          placeholder="Введіть ваш коментар"
+        ></textarea>
+      </label>
+
+      <button type="submit" class="submit-btn">Надіслати заявку</button>
+    </form>
+    <div class="loading" style="display: none">
+      <p>Відправляємо замовлення...</p>
+      <button class="loadingBtn" type="button">
+        <span class="loader" id="btnSpinner"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+  <div class="container footer-container">
+    <a href="./index.html" class="footer-logo-link">
+      <svg class="footer-logo-icon" width="221" height="49">
+        <use href="/furniweblab/assets/sprite-CA5GGzUd.svg#logo"></use>
+      </svg>
+    </a>
+
+    <!---->
+
+    <nav class="footer-nav">
+      <ul class="footer-nav-list">
+        <li class="footer-nav-item">
+          <a href="#furniture-list-section" class="footer-nav-link js-scroll"
+            >Наші меблі</a
+          >
+        </li>
+        <li class="footer-nav-item">
+          <a href="#about-us-section" class="footer-nav-link js-scroll"
+            >Про нас</a
+          >
+        </li>
+        <li class="footer-nav-item">
+          <a href="#faq-section" class="footer-nav-link js-scroll"
+            >Часті питання</a
+          >
+        </li>
+        <li class="footer-nav-item">
+          <a href="#feedbacks" class="footer-nav-link js-scroll">Відгуки</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!---->
+
+    <ul class="footer-social-list">
+      <li class="footer-social-item">
+        <a
+          href="https://www.youtube.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer-social-link"
+        >
+          <svg class="footer-social-icon" width="24" height="24">
+            <use href="/furniweblab/assets/sprite-CA5GGzUd.svg#youtube"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer-social-item">
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer-social-link"
+        >
+          <svg class="footer-social-icon" width="24" height="24">
+            <use href="/furniweblab/assets/sprite-CA5GGzUd.svg#instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer-social-item">
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer-social-link"
+        >
+          <svg class="footer-social-icon" width="24" height="24">
+            <use href="/furniweblab/assets/sprite-CA5GGzUd.svg#facebook"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <!---->
+
+    <p class="footer-copyright">© 2025 Furniweblab. Всі права захищені.</p>
+  </div>
+</footer>
+
+
+  </body>
+</html>
