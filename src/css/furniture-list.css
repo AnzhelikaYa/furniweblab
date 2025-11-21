@@ -1,0 +1,417 @@
+.furniture-list-section {
+  background-color: #fff;
+}
+
+.our-furniture {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: #080c09;
+
+  margin-bottom: 16px;
+}
+
+.section-descr {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #080c09;
+}
+
+.category-container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.category-item {
+  /* min-width: calc((100% - 16px) / 2); */
+  /* max-width: 159px; */
+  flex: 0 0 calc((100% - 16px) / 2);
+  max-width: none;
+  height: 122px;
+}
+
+.category-item:hover,
+.category-item:hover {
+  border: 8px solid #6b0609;
+  border-radius: 16px;
+}
+
+.category-card {
+  cursor: pointer;
+
+  border-radius: 8px;
+
+  padding: 23px 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(2, 2, 2, 0.2),
+      rgba(2, 2, 2, 0.2)
+    ),
+    var(--bg);
+}
+
+.category-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  color: #fff;
+
+  text-align: center;
+}
+
+.category-card.all {
+  --bg: image-set(
+    url('/img/furniture-list/allPhoto@x2.webp') type('image/webp') 2x,
+    url('/img/furniture-list/allPhoto@x1.webp') type('image/webp') 1x,
+    url('/img/furniture-list/allPhoto@x2.jpg') type('image/jpeg') 2x,
+    url('/img/furniture-list/allPhoto@x1.jpg') type('image/jpeg') 1x
+  );
+}
+
+.category-card.hallway {
+  --bg: image-set(
+    url('/img/furniture-list/hallwayPhoto@x2.webp') type('image/webp') 2x,
+    url('/img/furniture-list/hallwayPhoto@x1.webp') type('image/webp') 1x,
+    url('/img/furniture-list/hallwayPhoto@x1.jpg') type('image/jpeg') 2x,
+    url('/img/furniture-list/hallwayPhoto@x2.jpg') type('image/jpeg') 1x
+  );
+}
+
+.category-card.kitchens {
+  --bg: image-set(
+    url('/img/furniture-list/kitchensPhoto@x2.webp') type('image/webp') 2x,
+    url('/img/furniture-list/kitchensPhoto@x1.webp') type('image/webp') 1x,
+    url('/img/furniture-list/kitchensPhoto@x2.jpg') type('image/jpeg') 2x,
+    url('/img/furniture-list/kitchensPhoto@x1.jpg') type('image/jpeg') 1x
+  );
+}
+
+.category-card.garden {
+  --bg: image-set(
+    url('/img/furniture-list/gardenPhoto@x2.webp') type('image/webp') 2x,
+    url('/img/furniture-list/gardenPhoto@x1.webp') type('image/webp') 1x,
+    url('/img/furniture-list/gardenPhoto@x2.jpg') type('image/jpeg') 2x,
+    url('/img/furniture-list/gardenPhoto@x1.jpg') type('image/jpeg') 1x
+  );
+}
+
+.category-card.tables {
+  --bg: image-set(
+    url('/img/furniture-list/tablesPhoto@x2.webp') type('image/webp') 2x,
+    url('/img/furniture-list/tablesPhoto@x1.webp') type('image/webp') 1x,
+    url('/img/furniture-list/tablesPhoto@x2.jpg') type('image/jpeg') 2x,
+    url('/img/furniture-list/tablesPhoto@x1.jpg') type('image/jpeg') 1x
+  );
+}
+
+.category-card.soft {
+  --bg: image-set(
+    url('/img/furniture-list/softPhoto@x2.webp') type('image/webp') 2x,
+    url('/img/furniture-list/softPhoto@x1.webp') type('image/webp') 1x,
+    url('/img/furniture-list/softPhoto@x2.jpg') type('image/jpeg') 2x,
+    url('/img/furniture-list/softPhoto@x1.jpg') type('image/jpeg') 1x
+  );
+}
+
+.category-card.children {
+  --bg: image-set(
+    url('/img/furniture-list/childrenPhoto@x2.webp') type('image/webp') 2x,
+    url('/img/furniture-list/childrenPhoto@x1.webp') type('image/webp') 1x,
+    url('/img/furniture-list/childrenPhoto@x2.jpg') type('image/jpeg') 2x,
+    url('/img/furniture-list/childrenPhoto@x1.jpg') type('image/jpeg') 1x
+  );
+}
+
+.category-card.decor {
+  --bg: image-set(
+    url('/img/furniture-list/decorPhoto@x2.webp') type('image/webp') 2x,
+    url('/img/furniture-list/decorPhoto@x1.webp') type('image/webp') 1x,
+    url('/img/furniture-list/decorPhoto@x2.jpg') type('image/jpeg') 2x,
+    url('/img/furniture-list/decorPhoto@x1.jpg') type('image/jpeg') 1x
+  );
+}
+
+.category-card.bathroom {
+  --bg: image-set(
+    url('/img/furniture-list/bathroomPhoto@x2.webp') type('image/webp') 2x,
+    url('/img/furniture-list/bathroomPhoto@x1.webp') type('image/webp') 1x,
+    url('/img/furniture-list/bathroomPhoto@x2.jpg') type('image/jpeg') 2x,
+    url('/img/furniture-list/bathroomPhoto@x1.jpg') type('image/jpeg') 1x
+  );
+}
+
+.category-card.office {
+  --bg: image-set(
+    url('/img/furniture-list/officePhoto@x2.webp') type('image/webp') 2x,
+    url('/img/furniture-list/officePhoto@x1.webp') type('image/webp') 1x,
+    url('/img/furniture-list/officePhoto@x2.jpg') type('image/jpeg') 2x,
+    url('/img/furniture-list/officePhoto@x1.jpg') type('image/jpeg') 1x
+  );
+}
+
+.category-card.wardrobe {
+  --bg: image-set(
+    url('/img/furniture-list/wardrobePhoto@x2.webp') type('image/webp') 2x,
+    url('/img/furniture-list/wardrobePhoto@x1.webp') type('image/webp') 1x,
+    url('/img/furniture-list/wardrobePhoto@x2.jpg') type('image/jpeg') 2x,
+    url('/img/furniture-list/wardrobePhoto@x1.jpg') type('image/jpeg') 1x
+  );
+}
+
+.category-card.bads {
+  --bg: image-set(
+    url('/img/furniture-list/badsPhoto@x2.webp') type('image/webp') 2x,
+    url('/img/furniture-list/badsPhoto@x1.webp') type('image/webp') 1x,
+    url('/img/furniture-list/badsPhoto@x1.jpg') type('image/jpeg') 2x,
+    url('/img/furniture-list/badsPhoto@x2.jpg') type('image/jpeg') 1x
+  );
+}
+
+.category-card.hairs {
+  --bg: image-set(
+    url('/img/furniture-list/hairsPhoto@x2.webp') type('image/webp') 2x,
+    url('/img/furniture-list/hairsPhoto@x1.webp') type('image/webp') 1x,
+    url('/img/furniture-list/hairsPhoto@x2.jpg') type('image/jpeg') 2x,
+    url('/img/furniture-list/hairsPhoto@x1.jpg') type('image/jpeg') 1x
+  );
+}
+
+.load-more-button {
+  margin: 32px auto;
+}
+
+/* furniture-pagination-container */
+
+.our-furniture .furniture-pagination-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.furniture-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card-image {
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #080c09;
+
+  margin-bottom: 8px;
+}
+
+.card-color-container {
+  display: flex;
+  gap: 16px;
+}
+
+.card-color-item {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+
+  margin-bottom: 8px;
+
+  color: transparent;
+
+  border: 0.5px solid #d2d0d0;
+
+  /* box-shadow: 1px 1px 1px 1px rgba(182, 178, 178, 0.25); */
+
+  box-shadow: 0 0 4px 2px rgba(134, 132, 132, 0.25);
+}
+
+.card-price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #080c09;
+
+  margin-bottom: 16px;
+}
+
+.details-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #080c09;
+  background-color: #e8e6e6;
+
+  box-shadow: 0 1px 3px 0 rgb(141, 141, 141),
+    inset 0 -2px 1px 0 rgb(227, 227, 227), inset 0 0 0 1px rgb(232, 232, 232);
+}
+
+.details-button:hover {
+  background-color: #cbc9c9;
+}
+
+/* pagination */
+
+.pagination-container {
+  margin: 32px auto 0;
+
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+}
+
+.pagination-container[hidden] {
+  display: none;
+}
+
+.swipe-btn .pagination-btn .scroll-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgb(161, 160, 160);
+  border-radius: 100px;
+  padding: 12px;
+
+  background-color: #f2f2f2;
+}
+
+.swipe-btn .pagination-btn {
+  background: transparent; /* або background-color: transparent; */
+  border: none;
+  padding: 0;
+}
+
+.swipe-btn .pagination-btn:hover .scroll-svg,
+.swipe-btn .pagination-btn:active .scroll-svg {
+  background: #6b0609;
+  fill: #ffff;
+  outline: none;
+}
+
+.swipe-btn .pagination-btn[disabled],
+.swipe-btn .pagination-btn[disabled]:hover,
+.swipe-btn .pagination-btn[disabled]:active {
+  cursor: default;
+}
+
+.swipe-btn .pagination-btn[disabled] .scroll-svg,
+.swipe-btn .pagination-btn[disabled]:hover .scroll-svg,
+.swipe-btn .pagination-btn[disabled]:active .scroll-svg {
+  fill: rgb(161, 160, 160);
+}
+
+.swipe-btn .pagination-btn[disabled] {
+  pointer-events: none;
+}
+
+.pagination-container .pagination-item {
+  width: 56px;
+  height: 46px;
+  background: none;
+  border-radius: 100px;
+  padding: 10px 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: inherit;
+}
+
+.pagination-container .pagination-item:hover,
+.pagination-container .pagination-item:active {
+  background-color: #6b0609;
+  color: #ffff;
+  outline: none;
+}
+
+.pagination-container button:focus,
+.pagination-container button:focus-visible {
+  outline: none;
+}
+
+.pagination-item.isActive {
+  background-color: #6b0609;
+  color: #ffff;
+  outline: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .category-container {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .category-item {
+    flex: 0 0 calc((100% - 24px * 3) / 4);
+  }
+
+  .furniture-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .furniture-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .card-title {
+    height: calc(1.7em * 2);
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .section-title {
+    font-size: 48px;
+  }
+
+  .category-item {
+    flex: 0 0 calc((100% - 24px * 6) / 7);
+  }
+
+  .furniture-list-item {
+    width: calc((100% - 24px * 3) / 4);
+  }
+}

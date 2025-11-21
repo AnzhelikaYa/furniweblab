@@ -1,0 +1,63 @@
+/* стилі зірочок */
+
+.rating {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+  font-size: 20px; /* розмір зірок */
+}
+
+/* ВІДСТАНЬ між зірками має бути тут */
+.rating .star-container {
+  letter-spacing: 6px;
+}
+
+/* підкладка */
+.rating .star-container::before {
+  content: '★★★★★';
+  color: #fff;
+}
+
+/* заповнення */
+.rating .star-container::after {
+  /* значення рейтингу 0..5 */
+  --value: 3.6;
+
+  content: '★★★★★';
+  color: #080c09;
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: calc(var(--base) + var(--extra)); /*  */
+  overflow: hidden;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+/* обводка */
+.rating .star-container::before,
+.rating .star-container::after {
+  -webkit-text-stroke: 1px #080c09; /* було 2px */
+  paint-order: stroke fill;
+}
+
+.rating.value-0 {
+  --base: 0%;
+}
+.rating.value-1 {
+  --base: 20%;
+}
+.rating.value-2 {
+  --base: 40%;
+}
+.rating.value-3 {
+  --base: 60%;
+}
+.rating.value-4 {
+  --base: 80%;
+}
+.rating.value-5 {
+  --base: 100%;
+}
+.rating.half {
+  --extra: 10%;
+}

@@ -1,0 +1,44 @@
+<section id="order-modal" class="order-modal">
+  <div class="modal">
+    <button type="button" id="closeModalBtn" class="modal-close">
+      <svg class="modal-icon" width="32" height="32">
+        <use href="/img/sprite.svg#x"></use>
+      </svg>
+    </button>
+    <h2 class="modal-title">Замовити</h2>
+
+    <form id="callback-form" class="modal-form">
+      <label class="input-wrapper">
+        Ім’я*
+        <input type="text" name="name" id="name" placeholder="Дмитро" />
+      </label>
+
+      <label class="input-wrapper">
+        Телефон*
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          placeholder="38 099 123 22 11"
+        />
+      </label>
+
+      <label class="input-wrapper">
+        Коментар
+        <textarea
+          name="comment"
+          id="comment"
+          placeholder="Введіть ваш коментар"
+        ></textarea>
+      </label>
+
+      <button type="submit" class="submit-btn">Надіслати заявку</button>
+    </form>
+    <div class="loading" style="display: none">
+      <p>Відправляємо замовлення...</p>
+      <button class="loadingBtn" type="button">
+        <span class="loader" id="btnSpinner"></span>
+      </button>
+    </div>
+  </div>
+</section>

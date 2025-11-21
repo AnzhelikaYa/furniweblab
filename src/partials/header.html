@@ -1,0 +1,79 @@
+<header class="page-header">
+  <div class="container header-container">
+    <a href="./index.html" class="header-logo">
+      <svg class="icon-head-logo" width="163" height="70">
+        <use href="/img/sprite.svg#logo"></use>
+      </svg>
+    </a>
+
+    <div class="right-header-box">
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li class="header-item">
+            <a href="#furniture-list-section" class="header-nav-link current">Наші меблі</a>
+          </li>
+          <li class="header-item">
+            <a href="#about-us-section" class="header-nav-link">Про нас</a>
+          </li>
+          <li class="header-item">
+            <a href="#faq-section" class="header-nav-link">Часті питання</a>
+          </li>
+          <li class="header-item">
+            <a href="#feedbacks" class="header-nav-link">Відгуки</a>
+          </li>
+          <li class="header-item">
+            <a href="#furniture-list-section" class="header-nav-link header-nav-btn header-nav-btn-desktop">
+              До покупок
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Оновлена універсальна кнопка (бургер + хрестик) -->
+      <button type="button" class="menu-button" data-mobile-navbar-toggle aria-label="Меню">
+        <svg class="icon-head-button icon-menu" width="32" height="32">
+          <use href="/img/sprite.svg#menu"></use>
+        </svg>
+        <svg class="icon-head-button icon-close" width="32" height="32">
+          <use href="/img/sprite.svg#x"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Мобільне меню -->
+  <div class="mobile-navbar is-hidden" data-mobile-navbar>
+    <div class="container mobile-navbar-container">
+      <div class="mobile-navbar-header">
+        <a href="./index.html" class="navbar-header-logo">
+          <svg class="icon-head-logo" width="163" height="70">
+            <use href="/img/sprite.svg#logo"></use>
+          </svg>
+        </a>
+      </div>
+
+      <nav class="navbar-menu-nav">
+        <ul class="navbar-nav-list">
+          <li class="navbar-nav-item">
+            <a href="#furniture-list-section" class="navbar-nav-link">Наші меблі</a>
+          </li>
+          <li class="navbar-nav-item">
+            <a href="#about-us-section" class="navbar-nav-link">Про нас</a>
+          </li>
+          <li class="navbar-nav-item">
+            <a href="#faq-section" class="navbar-nav-link">Часті питання</a>
+          </li>
+          <li class="navbar-nav-item">
+            <a href="#feedbacks" class="navbar-nav-link">Відгуки</a>
+          </li>
+          <li class="navbar-nav-item navbar-nav-item-mob">
+            <a href="#furniture-list-section" class="navbar-nav-link header-nav-btn">До покупок</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Overlay -->
+  <div class="mobile-navbar-overlay is-hidden" data-mobile-navbar-overlay></div>
+</header>

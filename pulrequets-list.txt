@@ -1,0 +1,18 @@
+# Misha Huzar (header)
+
+# Lika Yakobchuk (hero section)
+
+# Alla Nazarenko (furniture list section)
+
+# Vitalina Bondarchuk (about us section)
+
+# Eva Krisheminska (faq section)
+
+# Roman Shliapin (feedback section)
+https://github.com/Alla-web/furniweblab/pull/39
+
+# Volodymyr (footer)
+
+# Lyudmila Sumarokova (furniture details modal)
+
+# Sofia Paretska (order modal)

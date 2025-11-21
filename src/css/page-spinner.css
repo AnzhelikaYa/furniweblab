@@ -1,0 +1,38 @@
+.no-scroll {
+  overflow: hidden;
+}
+
+/* повноекранний шар */
+#page-spinner {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center; /* центрування спінера */
+  background: rgba(0, 0, 0, 0.25); /* легке затемнення */
+  backdrop-filter: blur(6px); /* сам блюр фону */
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 2147483647;
+}
+
+/* сам спінер */
+.spinner {
+  width: 56px;
+  height: 56px;
+  border: 4px solid #ffffff80;
+  border-top-color: #b30000; /* колір акценту */
+  border-radius: 50%;
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* повага до людей з вимкненою анімацією */
+@media (prefers-reduced-motion: reduce) {
+  .spinner {
+    animation: none;
+  }
+}

@@ -1,0 +1,122 @@
+<section id="furniture-list-section" class="furniture-list-section">
+  <div class="our-furniture container">
+    <h1 class="section-title">Наші меблі</h1>
+
+    <p class="section-descr">Знайдіть ідеальні рішення для вашого інтер'єру</p>
+
+    <ul class="category-container">
+      <li class="category-item">
+        <a class="category-card all" href="#furniture">
+          <span class="category-title">Всі товари</span>
+        </a>
+      </li>
+      <li class="category-item">
+        <a class="category-card hallway" href="#furniture" data-id="">
+          <span class="category-title"></span
+        ></a>
+      </li>
+      <li class="category-item">
+        <a class="category-card kitchens" href="#furniture" data-id="">
+          <span class="category-title"></span>
+        </a>
+      </li>
+      <li class="category-item">
+        <a class="category-card garden" href="#furniture" data-id="">
+          <span class="category-title">Ліжка та матраци</span>
+        </a>
+      </li>
+      <li class="category-item">
+        <a class="category-card tables" href="#furniture">
+          <span class="category-title"></span>
+        </a>
+      </li>
+      <li class="category-item">
+        <a class="category-card soft" href="#furniture" data-id="">
+          <span class="category-title"></span>
+        </a>
+      </li>
+      <li class="category-item">
+        <a class="category-card children" href="#furniture">
+          <span class="category-title"></span>
+        </a>
+      </li>
+      <li class="category-item">
+        <a class="category-card decor" href="#furniture" data-id="">
+          <span class="category-title"></span>
+        </a>
+      </li>
+      <li class="category-item">
+        <a class="category-card bathroom" href="#furniture" data-id="">
+          <span class="category-title"></span>
+        </a>
+      </li>
+      <li class="category-item">
+        <a class="category-card office" href="#furniture" data-id="">
+          <span class="category-title"></span>
+        </a>
+      </li>
+      <li class="category-item">
+        <a class="category-card wardrobe" href="#furniture" data-id="">
+          <span class="category-title"></span>
+        </a>
+      </li>
+      <li class="category-item">
+        <a class="category-card bads" href="#furniture" data-id="">
+          <span class="category-title"></span>
+        </a>
+      </li>
+      <li class="category-item">
+        <a class="category-card hairs" href="#furniture" data-id="">
+          <span class="category-title"></span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="loading" hidden>
+      <p>Loading, please wait...</p>
+      <button class="loadingBtn" type="button">
+        <span class="loader"></span>
+      </button>
+    </div>
+
+    <div id="furniture" class="furniture-pagination-container">
+      <ul class="furniture-list"></ul>
+
+      <ul class="pagination-container" hidden>
+        <li class="swipe-btn back">
+          <button
+            class="pagination-btn pagination-back pag-buttons"
+            aria-label="Back"
+            data-nav="minus"
+            disabled
+          >
+            <svg class="scroll-svg" width="48" height="48" aria-hidden="true">
+              <use href="/img/sprite.svg#left-arrow-alt"></use>
+            </svg>
+          </button>
+        </li>
+
+        <li class="swipe-btn next">
+          <button
+            class="pagination-btn pagination-next pag-buttons"
+            aria-label="Next"
+            data-nav="plus"
+          >
+            <svg class="scroll-svg" width="48" height="48" aria-hidden="true">
+              <use href="/img/sprite.svg#right-arrow-alt"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <button
+      id="load-more-button"
+      class="load-more-button button"
+      type="button"
+      hidden
+    >
+      Показати ще
+    </button>
+  </div>
+</section>
